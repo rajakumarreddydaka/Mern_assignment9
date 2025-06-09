@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(45, 14, 88);
+            height: 100vh;
+        }
+        .box{
+            height: 40%;
+            width:40%;
+            background-color: whitesmoke;
+            border-radius: 8px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-family :Arial, Helvetica, sans-serif;
+            
+            border: 8px solid red ;
+        }
+    </style>
+</head>
+<body> 
+    <div class="box">
+        
+    </div>
+    <script  >
+        let class1=document.getElementsByClassName("box")[0];
+        function name(){
+                class1.innerHTML+="calling normal function <br>"
+        }
+        name()
+        let val=() => class1.innerHTML+="calling arrow function <br>";
+        val()
+        const greet = function() {
+                class1.innerHTML+="calling anonymous funciton"
+        };
+        greet(); 
+    </script>
+</body>
+</html>

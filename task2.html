@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: skyblue;
+            height: 100vh;
+        }
+        .box{
+            height: 40%;
+            width:40%;
+            background-color: whitesmoke;
+            border-radius: 8px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: 8px solid yellow;
+        }
+    </style>
+</head>
+<body> 
+    <div class="box"></div>
+    <script >
+        let name = new String("RajaKumar  reddy");
+        let div_1=document.getElementsByClassName("box")[0];
+        div_1.innerHTML+="<h1>String operations</h1>"
+        div_1.innerHTML+="My name is "+name+"<br>";
+        div_1.innerHTML+="After getting second character : "+name.charAt(1)+"<br>";
+        div_1.innerHTML+="After getting concatenate : "+" DAKA ".concat(name)+"<br>";
+        div_1.innerHTML+="After finding index of K : "+name.indexOf("K")+"<br>";
+        div_1.innerHTML+="After finding last index of d : "+name.lastIndexOf("d")+"<br>";
+        div_1.innerHTML+="After trimming : "+name.trim();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .box{
+            height: 60%;
+            width:400px;
+            background-color:yellow;
+            border-radius: 8px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            border: 20px solid red ;
+        }
+    </style>
+</head>
+<body> 
+    <div class="box"></div>
+    <script >
+        let value=document.getElementsByClassName("box")[0];
+        let array=[10,20,25]
+        value.innerHTML+="<h1>Array operations</h1>";
+        
+        value.innerHTML+="values in the array : "+array+".<br><br>";
+        array.push("45")
+        value.innerHTML+="values in the array after pushing :"+array+".<br><br>";
+        array.pop()
+        value.innerHTML+="values in the array after popping :"+array+".<br><br>";
+        array.reverse();
+        value.innerHTML+="values in the array after reversing :"+array+".<br><br>";
+        array.reverse();
+        let yes=array.includes(25)
+        value.innerHTML+="checking for include of the num3: "+yes+".<br><br>";
+        let index=array.indexOf(25);
+        value.innerHTML+=" index checking for num3 : "+index+"<br><br>";
+        let len=array.length
+        value.innerHTML+="Length of values in the array : "+len;
+
+
+    </script>
+</body>
+</html>
